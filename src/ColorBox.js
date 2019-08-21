@@ -6,7 +6,7 @@ export default class ColorBox extends Component {
               return (
                      <div className="ColorBox" style={{ background: this.props.background }}>
                             <span>{this.props.name}</span>
-                            <span>More</span>
+
                      </div>
               )
        }
