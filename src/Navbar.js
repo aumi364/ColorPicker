@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Slider, { Range } from 'rc-slider'
 import 'rc-slider/assets/index.css'
+import SelectInput from './SelectInput'
 import "./Navbar.css"
 
 export default class extends Component {
@@ -22,6 +23,7 @@ export default class extends Component {
                                           />
                                    </div>
                             </div>
+                            <SelectInput changeFormat={this.props.changeFormat} />
                      </header>
               )
        }
