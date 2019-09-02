@@ -7,28 +7,4 @@
       
        height:90%;
 }
-.slider{
-       width:343px;
-       margin : 0 10px;
-       display: inline-block;
 
-}
-.rc-slider-track{
-       background-color:transparent; 
-     
-}
-.rc-slider-handle,
-.rc-slider-handle:active,
-.rc-slider-handle:focus,
-.rc-slider-handle:hover{
-       height: 15px;
-       width:15px;
-       background-color: rgb(112, 70, 70);
-       outline:none;
-       border:  2px solid rgb(112, 70, 70)!important;
-       box-shadow: 1px 1px 24px -2px rgba(0, 0, 0, 1) !important;
-}
-.rc-slider-rail {
-       height: 8px;
-       background-color:rgb(165, 159, 159);
-}
