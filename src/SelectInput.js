@@ -5,12 +5,15 @@ export default class SelectInput extends Component {
        constructor(props) {
               super(props)
               this.state = {
-                     format: "hex"
+                     format: "hex", open: true
               }
        }
        handleChange = (e) => {
-              this.setState({ format: e.target.value })
+              this.setState({ format: e.target.value, open: true },
+                     this.props.checkSnackbar(this.state.open),
+              )
               this.props.changeFormat(e.target.value)
+              this.props.getFormat(e.target.value)
        }
 
        render() {
