@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Slider, { Range } from 'rc-slider'
+import { Link } from 'react-router-dom'
 import 'rc-slider/assets/index.css'
 import SelectInput from './SelectInput'
 import Snackbar from '@material-ui/core/Snackbar';
@@ -36,7 +37,7 @@ export default class extends Component {
               return (
                      <header className="Navbar">
                             <div className="logo">
-                                   <a href='#'>colorey </a>
+                                   <Link to={'/'}> Colorey</Link>
 
                             </div>
                             <div className="slider-container">
