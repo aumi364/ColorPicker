@@ -40,7 +40,9 @@ export default class extends Component {
 
                             </div>
                             <div className="slider-container">
+                                   <span>Level: {level}</span>
                                    <div className="slider">
+
                                           <Slider defaultValue={level}
                                                  min={100}
                                                  max={900}
