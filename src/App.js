@@ -23,7 +23,7 @@ export default class App extends Component {
     return (
 
       <Switch>
-        <Route exact path="/" render={() => <PaletteList palettes={SeedColors} />} />
+        <Route exact path="/" render={(routeProps) => <PaletteList palettes={SeedColors} {...routeProps} />} />
         <Route exact path="/palette/:id"
           render={(routeProps) => (
             <Palette
