@@ -5,8 +5,8 @@ import { withStyles } from '@material-ui/styles'
 
 const styles = {
        root: {
-              backgroundColor: "blue",
-              height: "100%",
+              backgroundColor: "#00093d",
+              height: "100vh",
               display: 'flex',
               alignItems: "flex-start",
               justifyContent: "center"
@@ -34,6 +34,13 @@ const styles = {
               gridTemplateColumns: "repeat(3,30%)",
               gridGap: "5%"
 
+       }, link: {
+              textDecoration: "none",
+              color: "#4c5561",
+              "&:hover": {
+                     cursor: "pointer",
+                     color: "#00093d"
+              }
        }
 }
 class PaletteList extends Component {
@@ -48,10 +55,10 @@ class PaletteList extends Component {
                                    <div className={classes.palettes}>
                                           {palettes.map(palette => (
                                                  <p>
-                                                        {/* <Link to={`/palette/${palette.id}`}>
-                                          {palette.paletteName}
-                                                  </Link> */}
-                                                        <MiniPalette {...palette} />
+                                                        {<Link className={classes.link} to={`/palette/${palette.id}`}>
+                                                               <MiniPalette {...palette} />
+                                                        </Link>}
+
                                                  </p>
 
                                           ))}
