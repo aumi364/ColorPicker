@@ -4,6 +4,7 @@ import './App.css'
 import Palette from './Palette'
 import PaletteList from './PaletteList'
 import SeedColors from './SeedColors'
+import SingleColorPalette from './SingleColorPalette'
 
 import { generatePalette } from "./ColorHelper"
 import { Divider } from '@material-ui/core';
@@ -40,8 +41,10 @@ export default class App extends Component {
               )} />
           )}
         />
-        <Route exact path="/palette/:paletteId/:colorId"
-          render={() => (<h1>Single color page</h1>)}
+        <Route
+          exact
+          path="/palette/:paletteId/:colorId"
+          render={() => (<SingleColorPalette />)}
         />
       </Switch>
 
