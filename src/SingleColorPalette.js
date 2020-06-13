@@ -3,6 +3,9 @@ import ColorBox from "./ColorBox";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import PaletteFooter from "./PaletteFooter";
+const styles = {
+  Palette: {}
+};
 export default class SingleColorPalette extends Component {
   constructor(props) {
     super(props);
